@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     function GetGameData() {
                 $.ajax({
-                    url: '/content/data.json',
+                    url: './content/data.json',
                     dataType: 'json',
                     success: function (data) {
 
@@ -50,7 +50,7 @@ $(document).ready(function () {
                             });
                         }); 
                     },
-
+                    
                 });
             }
         
