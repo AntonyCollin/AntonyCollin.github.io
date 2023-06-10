@@ -1,0 +1,493 @@
+/* #region Reset */ 
+ 
+ /* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+}
+
+
+/* #endregion */
+
+/* #region declarations */
+
+@font-face {
+  font-family: 'arvo'; 
+  src: url('../Arvo-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: 'arvo-bold'; 
+  src: url('../Arvo-Bold.ttf'); 
+}
+
+:root {
+  --mainPurple : rgb(183, 17, 183);
+  --mainBlack : rgb(10, 10, 10);
+  --mainGrey : rgb(33, 33, 33);
+}
+
+/* #endregion*/
+
+/* #region header */
+
+header {
+  align-items: center; 
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  padding: 1rem;
+}
+
+.name {
+  font-size: 2rem;
+  color: white;
+  font-family: 'arvo-bold';
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  gap: 2rem;
+  position: relative;
+  font-size: 1.3rem;
+  
+}
+
+/* #endregion */
+
+/* #region index */
+
+.title {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.games-container {
+  display: grid;
+  place-items: center;
+  color: white;
+    text-align: center;
+  padding: 2rem;
+
+}
+
+.games {
+  row-gap: 2rem;
+  gap: 5rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+
+.game{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.game-img {
+  object-position: center;
+  object-fit: cover;
+  height: 20rem;
+  width: 20rem;
+}
+
+.thumbnail-border {
+  border: 2px solid white;
+
+}
+
+.desc {
+  font-size: 1.1rem;
+}
+
+.cards-container {
+  margin: 0;
+  padding: 0;
+  padding-top: 1em;
+  gap: 0.3em;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
+.card {
+  background-color: var(--mainGrey);
+  font-size: 0.55em;
+  border-radius: 20px;
+  padding: 0.60em;
+}
+
+/* #endregion */
+
+/* #region details */
+
+.gameName {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+iframe {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  display: block;
+  margin: auto;
+}
+
+.details-img {
+  width: 50%;
+  margin: auto;
+}
+
+.gameDesc {
+  margin-top: 5rem;
+  font-size: larger;
+  width: 70%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.game-links{
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.contributions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 4rem;
+  justify-items: center;
+  padding-bottom: 4rem;
+  width: 80%;
+  margin: auto;
+  gap: 3rem;
+}
+
+.contributions-grid div{
+  color: var(--mainPurple);
+  font-family: 'arvo-bold';
+}
+
+/* #endregion */
+
+ /* #region all files */
+
+body {
+  background-color: var(--mainBlack);
+  color: white;
+  font-family: 'arvo';
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  grid-template-rows: auto 1fr auto;
+}
+
+.visible-link {
+  border-bottom: 2px solid white;
+} 
+
+.active {
+  color: var(--mypurple);
+}
+
+/* #endregion */
+
+
+/* #region about */
+
+.about {
+  font-size: 1.5rem;
+  width: 70%;
+  
+}
+
+.cont {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.pic {
+  border-radius: 100%;
+  width: 20%;
+  height: 20%;
+}
+
+.about-main {
+  padding: 2%;
+  padding-top: 5%;
+
+}
+
+.useful {
+  display: flex;
+  justify-content: center;
+}
+
+.download {
+  border: 2px solid white;
+  padding: 0.5rem;
+  background-color: var(--mainGrey);
+  font-size: 2rem;
+}
+
+
+.download:hover {
+  background-color: var(--mainPurple);
+  color: white;
+} 
+
+
+
+ .social-links {
+  display: flex;
+  float: right;
+  margin-top: 5rem;
+}
+
+/* #endregion */
+
+/* #region game hover */
+@keyframes borderAnimation {
+  0% {
+    border-width: var(--b);
+    border-color: var(--c);
+    background-position: 0 0;
+  
+  --b: 5px;   /* thickness of the border */
+  --c: var(--mainPurple);   /* color of the border */
+  --w: 20px;  /* width of border */
+  
+
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg,var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+  }
+
+  50% {
+    border-width: var(--b);
+    border-color: var(--c);
+    background-position: 0 0;
+  
+  --b: 5px;   /* thickness of the border */
+  --c: var(--mainBlack);   /* color of the border */
+  --w: 20px;  /* width of border */
+  
+
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg,var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+  }
+
+  100% {
+    border-width: var(--b);
+    border-color: var(--c);
+    background-position: 0 0;
+  
+  --b: 5px;   /* thickness of the border */
+  --c: black;   /* color of the border */
+  --w: 20px;  /* width of border */
+  
+
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg,var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+  }
+}
+
+.game-img:hover{
+  animation: borderAnimation 1.5s infinite;
+  
+}
+
+/* #endregion */
+
+/* #region footer */
+footer {
+  border-top: 1px solid white;
+  color: white;
+  text-align: center;
+  background-color: var(--mainGrey);
+}
+/* #endregion */
+
+/* #region Links*/
+a:link {
+  text-decoration: none;
+  color: white;
+
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+
+}
+
+a:hover {
+  color: var(--mainPurple);
+}
+
+a:active {
+  text-decoration: underline;
+  color: white;
+}
+/* #endregion */
+/* #region media queries */
+
+/* large screens */
+@media (max-width: 1200px) {
+
+}
+
+/* laptops */
+@media (max-width: 992px) {
+
+}
+
+/* tablets */
+@media (max-width: 768px) {
+
+}
+
+/* cellphones */
+ @media (max-width: 700px) {
+  .games {
+    flex-direction: column;
+    flex-grow: 4rem;
+  }
+
+  .game {
+    width: 100%;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+  }  
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+    
+  }  
+
+  nav {
+    margin: 0;
+    align-items: middle;
+  }   
+
+   .game-img {
+    height: 20rem;
+  }   
+
+  .pic {
+    border-radius: 0;
+    width: 50%;
+  }
+  .cont{
+    flex-wrap: wrap;
+  }
+
+  .about{
+    font-size: smaller;
+    width: 100%;
+  }
+  
+ } 
+/* #endregion */
+
+

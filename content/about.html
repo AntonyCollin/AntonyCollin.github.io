@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../layout/style.css">
+    <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+
+            var currentFolder = "/content/"
+
+            $('a').each(function () {
+
+                if ($(this).attr("href") === window.location.pathname.substr(currentFolder.length)) {
+                    $(this).css({ "color": "rgb(183, 17, 183)" });
+                    return false;
+                }
+
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <span class="name"> Antony Collin-Desrochers</span>
+        <nav class="nav-links">
+            <a href="index.html">Portfolio</a>
+            <a href="about.html">À propos</a>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <div class="cont">
+        <img class="pic" src="../images/me.jpg" alt="">
+        
+        <div class="about">
+            Salut ! Je m'appelle Antony Collin-Desrochers, j'ai 19 ans et j'ai un DEC en <a class="visible-link"
+                href="https://clg.qc.ca/programmes/techniques-de-linformatique/#apercu-1-tab">Techniques de
+                l'informatique</a>
+
+        au 
+        <a class="visible-link" href="https://clg.qc.ca/">Collège Lionel-Groulx </a>
+
+        . Dû à ma grande passion pour le jeu vidéo que j'ai développé depuis tout petit,
+            j'aspire à devenir programmeur de jouabilité dans l'industrie vidéoludique. Bien que je n'ai pas beaucoup de
+            projets à mon actif vu la fin récente de mon DEC, ni d'expérience professionnelle dans le domaine,
+            je recherche un stage ou emploi à temps plein en tant que programmeur de jouabilité. Je vous invite à regarder mon CV
+            et me contacter pour tout discussion.
+
+        </div>
+
+</div>
+    <div class="useful">
+    <a class="download" href="../CV - Google Docs.pdf" download="Antony Collin-Desrochers | CV">Télécharger mon CV</a>
+</div>
+        <div class="social-links">
+            <a target="_blank" href="mailto:antony.collin@outlook.com"><img src="../images/icons8-outlook-48.png" alt=""></a>
+
+        <a target="_blank" href="http://www.linkedin.com/in/antony-c-9709b724a"><img src="../images/icons8-linkedin-48.png" alt=""></a>
+    </div>
+    </main>
+
+    <footer>Site créé par <span>Antony Collin-Desrochers </span></footer>
+</body>
+
+</html>

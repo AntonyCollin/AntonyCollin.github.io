@@ -1,0 +1,27 @@
+<!-- 
+<div class="name">
+    <span>Antony Collin-Desrochers</span>
+</div>
+<div class="links">
+<a href="index.html">Portfolio</a>
+<a href="about.html">À propos</a>
+<a href="contact.html">Contact</a>
+</div>
+
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+<script>
+const baseurl = "http://127.0.0.1:5500/content/"
+
+$('a').each(function() {
+  var href = $(this).attr('href');
+  var currentLocation = window.location.href;
+
+  if (href === currentLocation.substring(baseurl.length)) {
+    // Perform action for matching <a> tag
+    $(this).addClass('active');
+  }
+});
+</script>
+
+ -->
