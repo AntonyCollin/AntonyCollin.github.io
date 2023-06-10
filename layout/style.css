@@ -85,12 +85,12 @@ select {
 
 @font-face {
   font-family: 'arvo'; 
-  src: url('../Arvo-Regular.ttf'); 
+  src: url('../font/Arvo-Regular.ttf'); 
 }
 
 @font-face {
   font-family: 'arvo-bold'; 
-  src: url('../Arvo-Bold.ttf'); 
+  src: url('../font/Arvo-Bold.ttf'); 
 }
 
 :root {
@@ -207,6 +207,8 @@ iframe {
   padding-bottom: 4rem;
   display: block;
   margin: auto;
+width: 60%;
+height: 40rem;
 }
 
 .details-img {
