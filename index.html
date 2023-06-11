@@ -40,7 +40,7 @@ $(document).ready(function () {
             const getParam = urlParams.get('game');
 
                         $.each(data, function (index, item) {
-                            $(".games").append(`<span class='game'>${item.name} <a href='./details/index.html?game=${item.name}'><img class='game-img thumbnail-border' src='${item.img}'> </a> <div class='cards-container'> </div></span>`)
+                            $(".games").append(`<span class='game'>${item.name} <a href='./details/?game=${item.name}'><img class='game-img thumbnail-border' src='${item.img}'> </a> <div class='cards-container'> </div></span>`)
                             
                             $.each(item.contributions, function (index,item) {
                                 console.log(item.work);
