@@ -14,15 +14,16 @@
 
         $(document).ready(function () {
 
-            var currentFolder = "/content/"
+            $('a').each(function(){
+    console.log(window.location.pathname);
+    console.log($(this).attr("href"));
+        if (        $(this).attr("href") === window.location.pathname)
+        {
+            $(this).css({"color": "rgb(183, 17, 183)"});
+            return false;
+        } 
 
-            $('a').each(function () {
-
-                if ($(this).attr("href") === window.location.pathname.substr(currentFolder.length)) {
-                    $(this).css({ "color": "rgb(183, 17, 183)" });
-                    return false;
-                }
-            });
+    });
 
             GetGameData();
 
@@ -87,8 +88,8 @@
     <header>
         <span class="name"> Antony Collin-Desrochers</span>
         <nav class="nav-links">
-            <a href="../">Portfolio</a>
-            <a href="../about/">À propos</a>
+            <a href="/Portfolio/">Portfolio</a>
+            <a href="/Portfolio/about/">À propos</a>
         </nav>
     </header>
 
