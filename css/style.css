@@ -207,8 +207,8 @@ iframe {
   padding-bottom: 4rem;
   display: block;
   margin: auto;
-width: 60%;
-height: 40rem;
+  aspect-ratio: 16 / 9;
+  width: 80%;
 }
 
 .details-img {
@@ -219,9 +219,10 @@ height: 40rem;
 .gameDesc {
   margin-top: 5rem;
   font-size: larger;
-  width: 70%;
+  width: 100%;
   margin: auto;
   padding: 2rem;
+  text-align: center;
 }
 
 .game-links{

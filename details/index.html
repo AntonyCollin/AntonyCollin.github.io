@@ -42,7 +42,7 @@
                 main.append(`<p class='gameDesc'>${game.desc}</p>`)
                 
                 if (game.video) {
-                    main.append(`<iframe class='vid' width='560' height='315' src=${game.video} title='${game.name}-video' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen> </iframe>`);
+                    main.append(`<iframe class='vid' src=${game.video} title='${game.name}-video' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen> </iframe>`);
                 }
 
                 if (game.contributions){
