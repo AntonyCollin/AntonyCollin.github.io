@@ -493,6 +493,14 @@ a:active {
     /* font-size: smaller; */
     width: 95%;
   }
+
+  .contributions-grid {
+    width: 95%;
+  }
+
+  .gameDesc {
+    width: 95%;
+  }
   
  } 
 /* #endregion */
