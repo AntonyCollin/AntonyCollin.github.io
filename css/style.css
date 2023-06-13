@@ -485,8 +485,8 @@ a:active {
   }
 
   .about{
-    font-size: smaller;
-    width: 100%;
+    /* font-size: smaller; */
+    width: 95%;
   }
   
  } 
