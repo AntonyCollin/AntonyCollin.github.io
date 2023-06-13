@@ -1,14 +1,5 @@
-// $(function () {
-//   $("header").load("../layout/header.html");
-//   $("footer").load("../layout/footer.html");
-// });
+var baseUrl = "/Portfolio/";
+// var baseUrl = "antonycd.com";
 
-// $(document).ready(function () {
-//   console.log("test");
-//   $("href").each(function () {
-//     console.log("oui");
-//     if (this.href == window.location.href) {
-//       $(this).addClass("active");
-//     }
-//   });
-// });
+$("header").load("/header.html");
+$("footer").load("../layout/footer.html");
