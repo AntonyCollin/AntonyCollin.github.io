@@ -232,7 +232,6 @@ iframe {
 }
 
 .contributions-grid {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 4rem;
   justify-items: center;
@@ -240,11 +239,16 @@ iframe {
   width: 80%;
   margin: auto;
   gap: 3rem;
+  text-align: center;
 }
 
-.contributions-grid div{
+.contributions-grid th{
   color: var(--mainPurple);
   font-family: 'arvo-bold';
+}
+
+.contributions-grid td {
+  padding: 2rem;
 }
 
 /* #endregion */

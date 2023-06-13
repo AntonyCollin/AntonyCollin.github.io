@@ -47,12 +47,12 @@
 
                 if (game.contributions){
                     main.append(`<h1 class="title"> Mes contributions au projet</h1>`);
-                    main.append(`<div class='contributions-grid'> </div>`);
+                    main.append(`<table class='contributions-grid'> </table>`);
                     
                     var grid = $(".contributions-grid");
                 
                 $.each(game.contributions, function (index, item) {
-                    grid.append(`<div>${item.work} </div> <p>${item.desc} </p>`);
+                    grid.append(`<tr><th>${item.work} </th></tr> <tr><td>${item.desc}</td> </tr>`);
                 });
             }
 
