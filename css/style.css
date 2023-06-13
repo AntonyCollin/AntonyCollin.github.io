@@ -208,7 +208,7 @@ iframe {
   display: block;
   margin: auto;
   aspect-ratio: 16 / 9;
-  width: 80%;
+  width: 50%;
 }
 
 .details-img {
