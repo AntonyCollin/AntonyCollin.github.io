@@ -3,7 +3,6 @@
 
 <head>
     <!-- <base href="/Portfolio/"> -->
-    <base href="antonycd.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,21 +10,9 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="include.js"></script>
     <script>
 
-
-$(document).ready(function () {
-
-    $('a').each(function(){
-    console.log(window.location.pathname);
-    console.log($(this).attr("href"));
-        if (        $(this).attr("href") === window.location.pathname)
-        {
-            $(this).css({"color": "rgb(183, 17, 183)"});
-            return false;
-        } 
-
-    });
 
     GetGameData();
 
@@ -44,8 +31,7 @@ $(document).ready(function () {
                             $(".games").append(`<span class='game'>${item.name} <a href='./details/?game=${item.name}'><img class='game-img thumbnail-border' src='${item.img}'> </a> <div class='cards-container'> </div></span>`)
                             
                             $.each(item.contributions, function (index,item) {
-                                console.log(item.work);
-                                console.log(`#${item.name}`);
+
                                 var lastGame = $(`.games .game:last-child`);
                                 lastGame.children(':last-child').append(`<em class='card'> ${item.work}</em>`);
                             });
@@ -55,18 +41,16 @@ $(document).ready(function () {
                 });
             }
         
-});
+
+
+
 
     </script>
 </head>
 
 <body class="games-body">
     <header>
-        <!-- <span class="name"> Antony Collin-Desrochers</span>
-        <nav class="nav-links">
-            <a href="">Portfolio</a>
-            <a href="about">À propos</a>
-        </nav> -->
+
     </header>
 
     <main class ="games-container">
@@ -75,7 +59,7 @@ $(document).ready(function () {
         </div>
     </main>
 
-    <footer>Site créé par <span>Antony Collin-Desrochers </span></footer>
+    <footer></footer>
 </body>
 
 </html>

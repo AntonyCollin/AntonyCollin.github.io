@@ -1,5 +1,4 @@
-var baseUrl = "/Portfolio/";
-// var baseUrl = "antonycd.com";
-
-$("header").load("/header.html");
-$("footer").load("../layout/footer.html");
+$(document).ready(function () {
+  $("header").load("/antonycd.com/header.html");
+  $("footer").load("/antonycd.com/footer.html");
+});
