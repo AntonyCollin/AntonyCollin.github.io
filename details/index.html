@@ -38,12 +38,16 @@
                 var main = $("main");
     
                 main.append(`<h1 class='gameName'>${game.name}</h1>`);
-                main.append(`<img class='details-img' src=../${game.img}>`);
-                main.append(`<p class='gameDesc'>${game.desc}</p>`)
+
+                main.append(`<div class='cont'> </div>`);
+                var cont = $(".cont");
+
+                cont.append(`<img class='details-img' src=../${game.img}>`);
                 
                 if (game.video) {
-                    main.append(`<iframe class='vid' src=${game.video} title='${game.name}-video' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen> </iframe>`);
+                    cont.append(`<iframe class='vid' src=${game.video} title='${game.name}-video' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen> </iframe>`);
                 }
+                main.append(`<p class='gameDesc'>${game.desc}</p>`)
 
                 if (game.contributions){
                     main.append(`<h1 class="title"> Mes contributions au projet</h1>`);

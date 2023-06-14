@@ -163,8 +163,8 @@ nav {
 .game-img {
   object-position: center;
   object-fit: cover;
-  height: 20rem;
   width: 20rem;
+  aspect-ratio: 1;
 }
 
 .thumbnail-border {
@@ -203,25 +203,21 @@ nav {
 }
 
 iframe {
-  margin-top: 4rem;
-  padding-bottom: 4rem;
-  display: block;
-  margin: auto;
   aspect-ratio: 16 / 9;
-  width: 50%;
+  width: 40%;
 }
 
 .details-img {
-  width: 50%;
-  margin: auto;
+  width: 40%;
+}
+
+.cont {
+  align-items: center;
 }
 
 .gameDesc {
-  margin-top: 5rem;
-  font-size: larger;
-  width: 100%;
-  margin: auto;
-  padding: 2rem;
+  font-size: 1.2rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -502,6 +498,9 @@ a:active {
     width: 95%;
   }
   
+  iframe, .details-img {
+    width: 100%;
+  }
  } 
 /* #endregion */
 
