@@ -3,6 +3,7 @@
  /* https://piccalil.li/blog/a-modern-css-reset */
 
 /* Box sizing rules */
+
 *,
 *::before,
 *::after {
@@ -109,6 +110,9 @@ header {
   justify-content: space-between;
   border-bottom: 1px solid white;
   padding: 1rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--mainBlack);
 }
 
 .name {
@@ -212,7 +216,7 @@ iframe {
 }
 
 .cont {
-  align-items: center;
+  margin-top: 2rem;
 }
 
 .gameDesc {
