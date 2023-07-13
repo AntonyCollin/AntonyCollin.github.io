@@ -456,6 +456,11 @@ a:active {
 
 @media (max-width: 800px)
 {
+  .name-container{
+    text-align: center;
+    line-height: 1.3rem;
+  }
+
   .name{
     font-size: 1.7rem;
   }
@@ -486,6 +491,7 @@ a:active {
   .name {
     font-size: 1.5rem;
     text-align: center;
+    word-wrap: normal;
   }  
 
   header {
@@ -497,6 +503,7 @@ a:active {
   nav {
     margin: 0;
     align-items: middle;
+    margin-top: 1rem;
   }   
 
    .game-img {
