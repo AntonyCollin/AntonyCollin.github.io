@@ -117,7 +117,6 @@ header {
 
 .name {
   font-size: 2rem;
-  color: white;
   font-family: 'arvo-bold';
 }
 
@@ -473,6 +472,7 @@ a:active {
   
   .name {
     font-size: 1.5rem;
+    text-align: center;
   }  
 
   header {

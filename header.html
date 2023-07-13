@@ -1,14 +1,14 @@
    <script>
     $("a").each(function () {
 
-  if ($(this).attr("href") === window.location.pathname) {
+  if ($(this).attr("href") === window.location.pathname && $(this).text() != " Antony CD | Développeur de jeux") {
     $(this).css({ color: "rgb(183, 17, 183)" });
     return false;
   }
 });
    </script>
 
-   <span class="name"> Antony Collin-Desrochers</span>
+   <a href="/"><span class="name"> Antony CD | Développeur de jeux</span></a>
         <nav class="nav-links">
             <a href="/">Portfolio</a>
             <a href="/about/">À propos</a>
