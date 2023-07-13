@@ -201,6 +201,27 @@ nav {
   padding: 0.60em;
 }
 
+/* .imgcontainer{
+  position: relative;
+} */
+
+.game-card {
+  position: relative;
+  
+}
+
+.category{
+  position: absolute;
+  z-index: 1;
+  width: 200%;
+  bottom: 2px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+
+  background-color: rgb(18, 162, 124);
+  color: white;
+}
+
 /* #endregion */
 
 /* #region details */
@@ -342,72 +363,7 @@ body {
 /* #endregion */
 
 /* #region game hover */
-@keyframes borderAnimation {
-  0% {
-    border-width: var(--b);
-    border-color: var(--c);
-    background-position: 0 0;
-  
-  --b: 5px;   /* thickness of the border */
-  --c: var(--mainPurple);   /* color of the border */
-  --w: 20px;  /* width of border */
-  
 
-  border: var(--b) solid #0000; /* space for the border */
-  --_g: #0000 90deg,var(--c) 0;
-  --_p: var(--w) var(--w) border-box no-repeat;
-  background:
-    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
-    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
-    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
-    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
-  }
-
-  50% {
-    border-width: var(--b);
-    border-color: var(--c);
-    background-position: 0 0;
-  
-  --b: 5px;   /* thickness of the border */
-  --c: var(--mainBlack);   /* color of the border */
-  --w: 20px;  /* width of border */
-  
-
-  border: var(--b) solid #0000; /* space for the border */
-  --_g: #0000 90deg,var(--c) 0;
-  --_p: var(--w) var(--w) border-box no-repeat;
-  background:
-    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
-    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
-    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
-    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
-  }
-
-  100% {
-    border-width: var(--b);
-    border-color: var(--c);
-    background-position: 0 0;
-  
-  --b: 5px;   /* thickness of the border */
-  --c: black;   /* color of the border */
-  --w: 20px;  /* width of border */
-  
-
-  border: var(--b) solid #0000; /* space for the border */
-  --_g: #0000 90deg,var(--c) 0;
-  --_p: var(--w) var(--w) border-box no-repeat;
-  background:
-    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
-    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
-    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
-    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
-  }
-}
-
-.game-img:hover{
-  animation: borderAnimation 1.5s infinite;
-  
-}
 
 /* #endregion */
 
