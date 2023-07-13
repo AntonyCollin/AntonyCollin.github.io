@@ -454,10 +454,23 @@ a:active {
 
 }
 
+@media (max-width: 800px)
+{
+  .name{
+    font-size: 1.7rem;
+  }
+
+  nav {
+    font-size: 1.2rem;
+  }
+}
+
 /* tablets */
 @media (max-width: 768px) {
 
 }
+
+
 
 /* cellphones */
  @media (max-width: 700px) {
