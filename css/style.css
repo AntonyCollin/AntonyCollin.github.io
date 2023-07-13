@@ -359,6 +359,12 @@ body {
   display: flex;
   float: right;
   margin-top: 5rem;
+  gap: 1rem;
+}
+
+.social-links a {
+  aspect-ratio: 1;
+  width: 3rem;
 }
 
 /* #endregion */

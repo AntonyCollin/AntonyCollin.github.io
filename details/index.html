@@ -62,6 +62,9 @@
                 });
             }
 
+            main.append(`<div class='useful'><a class='download' href='${game.download}' target='_blank'>Télécharger le jeu</a></div>`)
+
+
                 if (game.links) {
                     main.append(`<div class='game-links'> </div>`);
                     $.each(game.links, function (index, item) {
@@ -71,13 +74,11 @@
                 }
             }
 
-
     </script>
 </head>
 
 <body>
     <header>
-
     </header>
 
     <main>
