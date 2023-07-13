@@ -100,6 +100,10 @@ select {
   --mainGrey : rgb(33, 33, 33);
 }
 
+::selection {
+  background: var(--mainPurple);
+}
+
 /* #endregion*/
 
 /* #region header */

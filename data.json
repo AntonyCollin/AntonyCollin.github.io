@@ -10,7 +10,8 @@
     "category" : "École",
     "video": "https://www.youtube.com/embed/JBuz7_cl5_8",
     "download" : "https://queeb99.itch.io/chom",
-    "links": [
+    "links" :
+    [
       {
         "text": "Guide du jeu",
         "link": "https://docs.google.com/document/d/1V-X_ofIwo_crDE42tgn4gMiNliakSbjkeX7mHsRyLrY/edit?usp=sharing"
