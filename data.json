@@ -10,6 +10,18 @@
     "category" : "École",
     "video": "https://www.youtube.com/embed/JBuz7_cl5_8",
     "download" : "https://queeb99.itch.io/chom",
+    "screenshots" : 
+    [
+      "images/chom-screenshots/Capture d’écran 2023-07-12 225211.png", 
+      "images/chom-screenshots/Capture d’écran 2023-07-12 225245.png" ,
+      "images/chom-screenshots/Capture d’écran 2023-07-12 225327.png", 
+      "images/chom-screenshots/Capture d’écran 2023-07-12 225358.png", 
+      "images/chom-screenshots/Capture d’écran 2023-07-12 225632.png", 
+      "images/chom-screenshots/Capture d’écran 2023-07-12 225930.png", 
+      "images/chom-screenshots/Capture d’écran 2023-07-12 230018.png"
+    ]
+    ,
+    "year" : 2022,
     "links" :
     [
       {
@@ -19,8 +31,8 @@
     ],
     "contributions": [
       {
-        "work": "Programmeur jouabilité/UI",
-        "desc": "J'ai fait la programmation de plusieurs mécaniques de parcours comme pouvoir glisser ou courir sur les murs. J'ai également contribué à la jouabilité du jeu en programmant les ennemis, et divers éléments de parcours. Mis à part ces fonctionnalités, j'ai programmé la majorité des paramètres, l'écran de sélection de niveaux, des distributeurs d'armes, vitrines d'inspections dans le lobby et plus encore...",
+        "work": "Programmeur",
+        "desc": "Mécaniques de parcours, système d'ennemis et de projectiles, programmation de la majorité des réglages du jeu, système de sélection de niveaux, distributeurs d'armes, vitrines d'inspection dans le lobby et plus encore...",
         "video": "..."
       },
       {

@@ -30,7 +30,7 @@
             const getParam = urlParams.get('game');
 
                         $.each(data, function (index, item) {
-                            $(".games").append(`<span class='game'><h3>${item.name}</h3> <a class='game-card' href='./details/?game=${item.name}'><img class='game-img thumbnail-border' src='${item.img}'><div class='category'>${item.category}</div> </a> <div class='cards-container'> </div></span>`)
+                            $(".games").append(`<span class='game'><h3>${item.name} (${item.year})</h3> <a class='game-card' href='./details/?game=${item.name}'><img class='game-img thumbnail-border' src='${item.img}'><div class='category'>${item.category}</div> </a> <div class='cards-container'> </div></span>`)
                             
                             $.each(item.contributions, function (index,item) {
 

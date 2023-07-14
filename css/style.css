@@ -101,6 +101,7 @@ select {
 }
 
 ::selection {
+  color: white;
   background: var(--mainPurple);
 }
 
@@ -117,6 +118,7 @@ header {
   position: sticky;
   top: 0;
   background-color: var(--mainBlack);
+  z-index: 10;
 }
 
 .name {
@@ -221,6 +223,7 @@ nav {
   bottom: 2px;
   border-left: 2px solid white;
   border-right: 2px solid white;
+  font-size: 1.2rem;
 
   background-color: rgb(18, 162, 124);
   color: white;
@@ -284,6 +287,35 @@ iframe {
 .contributions-grid td,th {
   font-size: 1.2rem;
 }
+
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {
+  cursor:pointer;
+  display: inline;
+}
+.w3-badge {height:13px;width:13px;padding:0;
+  display: inline-block;
+  background-color: var(--mainGrey);
+  border-radius: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.w3-badge:hover{
+  background-color: var(--mainPurple);
+}
+
+.w3-display-container {
+  width: 50%;
+  margin: auto;  
+}
+
+.w3-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 
 /* #endregion */
 
@@ -498,10 +530,8 @@ a:active {
     width: 95%;
   }
   
-  iframe, .details-img {
+  iframe, .details-img, .w3-display-container {
     width: 100%;
   }
  } 
 /* #endregion */
-
-

@@ -16,64 +16,84 @@
     <script>
 
 
-            GetGameData();
+        GetGameData();
 
-            function GetGameData() {
-                $.ajax({
-                    url: '../data.json',
-                    dataType: 'json',
-                    success: function (data) {
+        function GetGameData() {
+            $.ajax({
+                url: '../data.json',
+                dataType: 'json',
+                success: function (data) {
 
-                        const urlParams = new URLSearchParams(window.location.search);
-                        const getParam = urlParams.get('game');
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const getParam = urlParams.get('game');
 
-                        $.each(data, function (index, item) {
-                            if (getParam == item.name) {
-                                SetData(item);
+                    $.each(data, function (index, item) {
+                        if (getParam == item.name) {
+                            SetData(item);
 
-                            }
-                        });
-                    }
-                });
-            }
-            function SetData(game) {
-                var main = $("main");
-    
-                main.append(`<h1 class='gameName'>${game.name}</h1>`);
-
-                main.append(`<div class='cont'> </div>`);
-                var cont = $(".cont");
-
-                cont.append(`<img class='details-img' src=../${game.screenshot}>`);
-                
-                if (game.video) {
-                    cont.append(`<iframe class='vid' src=${game.video} title='${game.name}-video' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen> </iframe>`);
+                        }
+                    });
                 }
-                main.append(`<p class='gameDesc'>${game.desc}</p>`)
+            });
+        }
+        function SetData(game) {
+            var main = $("main");
 
-                if (game.contributions){
-                    main.append(`<h1 class="title"> Mes contributions au projet</h1>`);
-                    main.append(`<table class='contributions-grid'> </table>`);
-                    
-                    var grid = $(".contributions-grid");
-                
+            main.append(`<h1 class='gameName'>${game.name} (${game.year})</h1>`);
+
+            main.append(`<div class='cont'> </div>`);
+            var cont = $(".cont");
+
+            cont.append(`<img class='details-img' src=../${game.screenshot}>`);
+
+            if (game.video) {
+                cont.append(`<iframe class='vid' src=${game.video} title='${game.name}-video' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen> </iframe>`);
+            }
+            main.append(`<p class='gameDesc'>${game.desc}</p>`)
+
+            if (game.screenshots) {
+                main.append(`<div class='w3-content w3-display-container'> </div>`);
+                var slideshow = $(".w3-display-container");
+
+                $.each(game.screenshots, function (index, item) {
+                    slideshow.append(`<img class='mySlides' src='../${item}' >`);
+
+                });
+                slideshow.append(`<div class='w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle' > </div>`);
+                var container = $(".w3-container");
+                container.append(`<div class='w3-left w3-hover-text-khaki' onclick=plusDivs(-1)>&#10094; </div>`);
+
+                $.each(game.screenshots, function (index, item) {
+                    container.append(`<span class='w3-badge demo w3-border w3-transparent w3-hover-white' onclick='currentDiv(${index + 1})'> </span>`);
+
+                });
+                container.append(`<div class='w3-right w3-hover-text-khaki' onclick=plusDivs(1)>&#10095; </div>`);
+
+                $('head').append(`<script>  var slideIndex = 1;showDivs(slideIndex);function plusDivs(n){showDivs(slideIndex += n);}function currentDiv(n) {showDivs(slideIndex = n);}function showDivs(n){var i;var x = document.getElementsByClassName('mySlides');var dots = document.getElementsByClassName('demo');if (n > x.length) {slideIndex = 1}if (n < 1) {slideIndex = x.length}for (i = 0; i < x.length; i++) {x[i].style.display = 'none';  }for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(' w3-white', '');}x[slideIndex-1].style.display = 'block';dots[slideIndex-1].className += ' w3-white';}`);
+            }   
+
+            if (game.contributions) {
+                main.append(`<h1 class="title"> Mes contributions au projet</h1>`);
+                main.append(`<table class='contributions-grid'> </table>`);
+
+                var grid = $(".contributions-grid");
+
                 $.each(game.contributions, function (index, item) {
                     grid.append(`<tr><th>${item.work} </th></tr> <tr><td>${item.desc}</td> </tr>`);
                 });
             }
 
-            main.append(`<div class='useful'><a class='download' href='${game.download}' target='_blank'>Télécharger le jeu</a></div>`)
+            main.append(`<div class='useful'><a class='download' href='${game.download}' target='_blank'>Jouer au jeu</a></div>`)
 
 
-                if (game.links) {
-                    main.append(`<div class='game-links'> </div>`);
-                    $.each(game.links, function (index, item) {
-                        main.append
-                        $(".game-links").append(`<a class='visible-link' target='_blank' href='${item.link}'>${item.text}</a>`)
-                    });
-                }
+            if (game.links) {
+                main.append(`<div class='game-links'> </div>`);
+                $.each(game.links, function (index, item) {
+                    $(".game-links").append(`<a class='visible-link' target='_blank' href='${item.link}'>${item.text}</a>`)
+                });
             }
-
+            
+        }
     </script>
 </head>
 
@@ -82,6 +102,7 @@
     </header>
 
     <main>
+
 
     </main>
 
