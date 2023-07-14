@@ -82,31 +82,6 @@ select {
 
 /* #endregion */
 
-/* #region declarations */
-
-@font-face {
-  font-family: 'arvo'; 
-  src: url('../font/Arvo-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: 'arvo-bold'; 
-  src: url('../font/Arvo-Bold.ttf'); 
-}
-
-:root {
-  --mainPurple : rgb(183, 17, 183);
-  --mainBlack : rgb(10, 10, 10);
-  --mainGrey : rgb(33, 33, 33);
-}
-
-::selection {
-  color: white;
-  background: var(--mainPurple);
-}
-
-/* #endregion*/
-
 /* #region header */
 
 header {
@@ -119,11 +94,6 @@ header {
   top: 0;
   background-color: var(--mainBlack);
   z-index: 10;
-}
-
-.name {
-  font-size: 2rem;
-  font-family: 'arvo-bold';
 }
 
 nav {
@@ -140,38 +110,19 @@ nav {
 
 /* #region index */
 
-.title {
-  font-size: 2.2rem;
-  text-align: center;margin-top: 3rem;
-}
-
-.main-title {
-  font-size: 2.2rem;
-  text-align: center
-}
 
 .games-container {
-  display: grid;
   place-items: center;
-  color: white;
-    text-align: center;
   padding: 2rem;
-
 }
 
 .games {
   row-gap: 2rem;
   gap: 5rem;
   margin-top: 2rem;
-  display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 
-}
-
-.game{
-  text-align: center;
-  font-size: 1.5rem;
 }
 
 .game-img {
@@ -181,21 +132,11 @@ nav {
   aspect-ratio: 1;
 }
 
-.thumbnail-border {
-  border: 2px solid white;
-
-}
-
-.desc {
-  font-size: 1.1rem;
-}
-
 .cards-container {
   margin: 0;
   padding: 0;
   padding-top: 1em;
   gap: 0.3em;
-  display: flex;
   flex-wrap: wrap;
   max-width: 300px;
 }
@@ -233,34 +174,21 @@ nav {
 
 /* #region details */
 
-.gameName {
-  margin-top: 2rem;
-  text-align: center;
-}
-
 iframe {
   aspect-ratio: 16 / 9;
-  width: 40%;
 }
 
-.details-img {
+.details-img, iframe {
   width: 40%;
-}
-
-.cont {
-  margin-top: 2rem;
 }
 
 .gameDesc {
   font-size: 1.2rem;
   padding: 1rem;
-  text-align: center;
 }
 
 .game-links{
-  display: flex;
   margin: 1rem;
-  justify-content: center;
   gap: 	1rem;
 }
 
@@ -270,14 +198,7 @@ iframe {
   justify-items: center;
   padding-bottom: 2rem;
   width: 80%;
-  margin: auto;
   gap: 3rem;
-  text-align: center;
-}
-
-.contributions-grid th{
-  color: var(--mainPurple);
-  font-family: 'arvo-bold';
 }
 
 .contributions-grid td {
@@ -289,12 +210,17 @@ iframe {
 }
 
 
-.mySlides {display:none}
+.mySlides {
+  display:none
+}
 .w3-left, .w3-right, .w3-badge {
   cursor:pointer;
   display: inline;
 }
-.w3-badge {height:20px;width:20px;padding:0;
+.w3-badge {
+  height:20px;
+  width:20px;
+  padding:0;
   display: inline-block;
   background-color: var(--mainGrey);
   border-radius: 1rem;
@@ -306,15 +232,8 @@ iframe {
   background-color: var(--mainPurple);
 }
 
-.w3-display-container {
-  width: 50%;
-  margin: auto;  
-}
-
 .w3-container {
   margin-top: 1rem;
-  text-align: center;
-  font-size: 2rem;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -323,6 +242,27 @@ iframe {
 /* #endregion */
 
  /* #region all files */
+
+ @font-face {
+  font-family: 'arvo'; 
+  src: url('../font/Arvo-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: 'arvo-bold'; 
+  src: url('../font/Arvo-Bold.ttf'); 
+}
+
+:root {
+  --mainPurple : rgb(183, 17, 183);
+  --mainBlack : rgb(10, 10, 10);
+  --mainGrey : rgb(33, 33, 33);
+}
+
+::selection {
+  color: white;
+  background: var(--mainPurple);
+}
 
 body {
   background-color: var(--mainBlack);
@@ -338,6 +278,17 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+footer {
+  border-top: 1px solid white;
+  color: white;
+  text-align: center;
+  background-color: var(--mainGrey);
+}
+
+/* #endregion */
+
+/* #region utility */
+
 .visible-link {
   border-bottom: 2px solid white;
 } 
@@ -346,8 +297,77 @@ body {
   color: var(--mypurple);
 }
 
+.purple {
+  color: var(--mainPurple);
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.smaller-full-width {
+  width: 95%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.text-justified {
+  text-align: justify;
+}
+
 .purple-background {
   background-color: var(--mainPurple);
+}
+
+.grey-background {
+  background-color: var(--mainGrey);
+}
+
+.bold {
+  font-family: 'arvo-bold';
+}
+
+.large-text {
+  font-size: 2rem;
+}
+
+.medium-text {
+  font-size: 1.5rem;
+}
+
+.small-text {
+  font-size: 1rem;
+}
+
+.centered {
+  margin: auto;
+}
+
+.content-centered {
+  justify-content: center;
+}
+
+.small-margin {
+  margin-top: 2rem;
+}
+
+.white-border {
+  border: 2px solid white;
+
 }
 
 /* #endregion */
@@ -356,15 +376,11 @@ body {
 /* #region about */
 
 .about {
-  font-size: 1.5rem;
   width: 70%;
-  
 }
 
 .cont {
-  display: flex;
   gap: 2rem;
-  justify-content: center;
 }
 .pic {
   border-radius: 100%;
@@ -378,16 +394,9 @@ body {
 
 }
 
-.useful {
-  display: flex;
-  justify-content: center;
-}
-
 .download {
-  border: 2px solid white;
   padding: 0.5rem;
   background-color: var(--mainGrey);
-  font-size: 2rem;
 }
 
 
@@ -396,10 +405,7 @@ body {
   color: white;
 } 
 
-
-
  .social-links {
-  display: flex;
   float: right;
   margin-top: 5rem;
   gap: 1rem;
@@ -412,19 +418,6 @@ body {
 
 /* #endregion */
 
-/* #region game hover */
-
-
-/* #endregion */
-
-/* #region footer */
-footer {
-  border-top: 1px solid white;
-  color: white;
-  text-align: center;
-  background-color: var(--mainGrey);
-}
-/* #endregion */
 
 /* #region Links*/
 a:link {

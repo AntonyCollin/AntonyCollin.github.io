@@ -39,9 +39,9 @@
         function SetData(game) {
             var main = $("main");
 
-            main.append(`<h1 class='gameName'>${game.name} (${game.year})</h1>`);
+            main.append(`<h1 class='small-margin text-centered'>${game.name} (${game.year})</h1>`);
 
-            main.append(`<div class='cont'> </div>`);
+            main.append(`<div class='small-margin'> </div>`);
             var cont = $(".cont");
 
             cont.append(`<img class='details-img' src=../${game.screenshot}>`);
@@ -49,17 +49,17 @@
             if (game.video) {
                 cont.append(`<iframe class='vid' src=${game.video} title='${game.name}-video' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen> </iframe>`);
             }
-            main.append(`<p class='gameDesc'>${game.desc}</p>`)
+            main.append(`<p class='gameDesc text-justified'>${game.desc}</p>`)
 
             if (game.screenshots) {
-                main.append(`<div class='w3-content w3-display-container'> </div>`);
+                main.append(`<div class='w3-content w3-display-container centered half-width'> </div>`);
                 var slideshow = $(".w3-display-container");
 
                 $.each(game.screenshots, function (index, item) {
                     slideshow.append(`<img class='mySlides' src='../${item}' >`);
 
                 });
-                slideshow.append(`<div class='w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle' > </div>`);
+                slideshow.append(`<div class='w3-center w3-container large-text text-centered w3-section w3-large w3-text-white w3-display-bottommiddle' > </div>`);
                 var container = $(".w3-container");
                 container.append(`<div class='w3-left w3-hover-text-khaki' onclick=plusDivs(-1)>&#10094; </div>`);
 
@@ -76,21 +76,21 @@
 
 
             if (game.contributions) {
-                main.append(`<h1 class="title"> Mes contributions au projet</h1>`);
-                main.append(`<table class='contributions-grid'> </table>`);
+                main.append(`<h1 class="text-centered"> Mes contributions au projet</h1>`);
+                main.append(`<table class='contributions-grid centered text-centered'> </table>`);
 
                 var grid = $(".contributions-grid");
 
                 $.each(game.contributions, function (index, item) {
-                    grid.append(`<tr><th>${item.work} </th></tr> <tr><td>${item.desc}</td> </tr>`);
+                    grid.append(`<tr><th class='purple bold'>${item.work} </th></tr> <tr><td>${item.desc}</td> </tr>`);
                 });
             }
 
-            main.append(`<div class='useful'><a class='download' href='${game.download}' target='_blank'>Jouer au jeu</a></div>`)
+            main.append(`<div class='useful text-centered'><a class='download large-text white-border content-centered' href='${game.download}' target='_blank'>Jouer au jeu</a></div>`)
 
 
             if (game.links) {
-                main.append(`<div class='game-links'> </div>`);
+                main.append(`<div class='game-links flex content-centered'> </div>`);
                 $.each(game.links, function (index, item) {
                     $(".game-links").append(`<a class='visible-link' target='_blank' href='${item.link}'>${item.text}</a>`)
                 });
