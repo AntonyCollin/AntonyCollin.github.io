@@ -1,6 +1,7 @@
    <script>
     $("a").each(function () {
-
+console.log($(this).attr("href"));
+console.log(window.location.pathname);
   if ($(this).attr("href") === window.location.pathname && $(this).text() != " Antony CD | Développeur de jeux") {
     $(this).css({ color: "rgb(183, 17, 183)" });
     return false;
