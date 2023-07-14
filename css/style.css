@@ -268,7 +268,7 @@ iframe {
   grid-template-columns: 1fr 1fr;
   padding-top: 4rem;
   justify-items: center;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   width: 80%;
   margin: auto;
   gap: 3rem;
@@ -315,6 +315,9 @@ iframe {
   margin-top: 1rem;
   text-align: center;
   font-size: 2rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 /* #endregion */

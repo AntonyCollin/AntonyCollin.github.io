@@ -71,15 +71,7 @@
 
                 $('head').append(`<script>  var slideIndex = 1;showDivs(slideIndex);function plusDivs(n){showDivs(slideIndex += n);}function currentDiv(n) {showDivs(slideIndex = n);}function showDivs(n){var i;var x = document.getElementsByClassName('mySlides');var dots = document.getElementsByClassName('demo');if (n > x.length) {slideIndex = 1}if (n < 1) {slideIndex = x.length}for (i = 0; i < x.length; i++) {x[i].style.display = 'none';  }for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(' w3-white', '');}x[slideIndex-1].style.display = 'block';dots[slideIndex-1].className += ' w3-white';}`);
             
-                    $('.w3-badge').click(function() {
-                var index = $(this).index();
 
-                // Remove style from all circles
-                $('.w3-badge').removeClass('purple-background');
-
-                // Add style to the selected circle
-                $(this).addClass('purple-background');
-            });
                 }   
 
 
@@ -103,6 +95,48 @@
                     $(".game-links").append(`<a class='visible-link' target='_blank' href='${item.link}'>${item.text}</a>`)
                 });
             }
+
+            $('.w3-badge').click(function() {
+                var index = $(this).index();
+
+                // Remove style from all circles
+                $('.w3-badge').removeClass('purple-background');
+
+                // Add style to the selected circle
+                $(this).addClass('purple-background');
+            });
+            
+            // Update selected circle when using w3-left and w3-right buttons
+            $('.w3-left, .w3-right').click(function() {
+                updateSelectedCircle(slideIndex);
+            });
+        
+        
+        function updateSelectedCircle(slideIndex) {
+            // Remove style from all circles
+            $('.w3-badge').removeClass('purple-background');
+            
+            // Add style to the circle with the corresponding index
+            $('.w3-badge').eq(slideIndex - 1).addClass('purple-background');
+        }
+        updateSelectedCircle(1);
+
+
+//         var intervalId = window.setInterval(function(){
+
+            
+//             var x = document.getElementsByClassName('mySlides');
+            
+//             var temp = slideIndex;
+
+//             if (temp > x.length) {temp = 1}
+            
+//             if (temp < 1) {temp = x.length}
+            
+//             updateSelectedCircle(temp);
+//   plusDivs(1);
+  
+// }, 5000);
             
         }
     </script>
