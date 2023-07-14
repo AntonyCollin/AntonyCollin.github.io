@@ -41,7 +41,7 @@
 
             main.append(`<h1 class='small-margin text-centered'>${game.name} (${game.year})</h1>`);
 
-            main.append(`<div class='small-margin'> </div>`);
+            main.append(`<div class='small-margin cont flex content-centered'> </div>`);
             var cont = $(".cont");
 
             cont.append(`<img class='details-img' src=../${game.screenshot}>`);
@@ -76,7 +76,7 @@
 
 
             if (game.contributions) {
-                main.append(`<h1 class="text-centered"> Mes contributions au projet</h1>`);
+                main.append(`<h1 class="text-centered small-margin"> Mes contributions au projet</h1>`);
                 main.append(`<table class='contributions-grid centered text-centered'> </table>`);
 
                 var grid = $(".contributions-grid");
