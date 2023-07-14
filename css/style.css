@@ -211,7 +211,9 @@ iframe {
 
 
 .mySlides {
-  display:none
+  display:none;
+  aspect-ratio : 16/9;
+  object-fit: cover;
 }
 .w3-left, .w3-right, .w3-badge {
   cursor:pointer;

@@ -18,7 +18,8 @@
       "images/chom-screenshots/Capture d’écran 2023-07-12 225358.png", 
       "images/chom-screenshots/Capture d’écran 2023-07-12 225632.png", 
       "images/chom-screenshots/Capture d’écran 2023-07-12 225930.png", 
-      "images/chom-screenshots/Capture d’écran 2023-07-12 230018.png"
+      "images/chom-screenshots/Capture d’écran 2023-07-12 230018.png",
+      "200.gif"
     ]
     ,
     "year" : 2022,
@@ -32,18 +33,15 @@
     "contributions": [
       {
         "work": "Programmeur",
-        "desc": "Mécaniques de parcours, système d'ennemis et de projectiles, programmation de la majorité des réglages du jeu, système de sélection de niveaux, distributeurs d'armes, vitrines d'inspection dans le lobby et plus encore...",
-        "video": "..."
+        "desc": "Mécaniques de parcours, système d'ennemis et de projectiles, programmation de la majorité des réglages du jeu, système de sélection de niveaux, distributeurs d'armes, vitrines d'inspection dans le lobby et plus encore..."
       },
       {
         "work": "Testeur QA",
-        "desc": "Tout au long du projet, j'ai dû faire à répétitions des tests pour m'assurer que les mécaniques fonctionnent bien et qu'ils sont implémentés comme prévu.",
-        "img": ""
+        "desc": "Tout au long du projet, j'ai dû faire à répétitions des tests pour m'assurer que les mécaniques fonctionnent bien et qu'ils sont implémentés comme prévu."
       },
       {
         "work": "Game designer",
-        "desc": "Du début à la fin du projet j'ai assisté au design du jeu que ce soit pour les niveaux, les mécaniques ou l'environnement.",
-        "img": ""
+        "desc": "Du début à la fin du projet j'ai assisté au design du jeu que ce soit pour les niveaux, les mécaniques ou l'environnement."
       }
     ]
   }
