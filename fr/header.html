@@ -1,8 +1,7 @@
    <script>
     $("a").each(function () {
-console.log($(this).attr("href"));
-console.log(window.location.pathname);
-  if ($(this).attr("href") === window.location.pathname && $(this).text() != " Antony CD | Développeur de jeux") {
+
+      if ($(this).attr("href") === window.location.pathname && $(this).text() != " Antony CD | Développeur de jeux" && $(this).text() != "fr " && $(this).text() != "en ") {
     $(this).css({ color: "rgb(183, 17, 183)" });
     return false;
   }
@@ -13,4 +12,5 @@ console.log(window.location.pathname);
         <nav class="nav-links">
             <a href="/fr/">Portfolio</a>
             <a href="/fr/about/">À propos</a>
+            <a class="small-text bold" href="/en/">fr <img style="width: 15px; height: 15px; display: inline;" src="/images/lang.png" alt=""></a>
         </nav>

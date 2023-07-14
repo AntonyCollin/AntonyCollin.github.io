@@ -1,0 +1,16 @@
+   <script>
+    $("a").each(function () {
+
+  if ($(this).attr("href") === window.location.pathname && $(this).text() != " Antony CD | Développeur de jeux" && $(this).text() != "fr " && $(this).text() != "en ") {
+    $(this).css({ color: "rgb(183, 17, 183)" });
+    return false;
+  }
+});
+   </script>
+
+   <a class="name-container" href="/en"><span class="large-text bold"> Antony CD | Développeur de jeux</span></a>
+        <nav class="nav-links">
+            <a href="/en/">Portfolio</a>
+            <a href="/en/about/">À propos</a>
+            <a class="small-text bold" href="/fr/">en <img style="width: 15px; height: 15px; display: inline;" src="/images/lang.png" alt=""></a>
+        </nav>
