@@ -3,11 +3,11 @@
   {
     "name": "C.H.O.M.",
     "filename" : "CHOM",
-    "desc": "C.H.O.M. est un jeu vidéo de type Parcours/Shooter dans un environnement sci-fi qui a été réalisé dans Unity avec C# dans le contexte d'un projet étudiant, il a été fait en équipe avec 3 autres étudiants pendant une période de 3 mois. En travaillant de manière agile (SCRUM) et en participant à presque tous les aspects de la conception d'un jeu vidéo, cela m'a permis de gagner de l'expérience et de travailler de manière semblable à l'industrie. Mon équipe et moi avons aussi travaillé en collaboration avec une équipe d'artistes ce qui nous a permis de bien comprendre l'aspect collaboratif de la création de jeux. C.H.O.M. n'était que la première itération de mon aventure dans la création de jeu vidéo et je suis très ambitieux en ce qui concerne mon avenir dans le milieu. Comme vous allez pouvoir le voir ci-dessous bien que ma part dans le projet était axée sur la programmation, j'ai également été grandement impliqué dans le design du jeu.",
+    "desc": "C.H.O.M. is a Parkour/Shooter video game in a sci-fi environment that was made in Unity with C# in the context of a student project, I made it in a team with 3 other students over a period of 3 months. Working in an agile way (SCRUM) and participating in almost every aspect of video game design, it allowed me to gain experience and work in an industry-like way. My team and I also worked in collaboration with a small team of artists, which gave us a good understanding of the collaborative aspect of game creation. C.H.O.M. was only the first iteration of my journey in video game creation, I'm very ambitious about my future in the business. As you'll see below, although my part in the project was focused on programming, I was also heavily involved in the game's design.",
     "img": "/images/chom.jpg",
     "screenshot" : "/images/chom-screenshot.png",
     "status": "done",
-    "category" : "École",
+    "category" : "School",
     "video": "https://www.youtube.com/embed/JBuz7_cl5_8",
     "download" : "https://queeb99.itch.io/chom",
     "screenshots" : 
@@ -25,22 +25,22 @@
     "links" :
     [
       {
-        "text": "Guide du jeu",
+        "text": "Game guide (french)",
         "link": "https://docs.google.com/document/d/1V-X_ofIwo_crDE42tgn4gMiNliakSbjkeX7mHsRyLrY/edit?usp=sharing"
       }
     ],
     "contributions": [
       {
-        "work": "Programmeur",
-        "desc": "Mécaniques de parcours, système d'ennemis et de projectiles, programmation de la majorité des réglages du jeu, système de sélection de niveaux, distributeurs d'armes, vitrines d'inspection dans le lobby et plus encore..."
+        "work": "Programmer",
+        "desc": "Parkour mechanics, enemy and projectile system, programming of the majority of the game's settings, level selection system, weapon dispensers, inspection showcases in the lobby and more..."
       },
       {
-        "work": "Testeur QA",
-        "desc": "Tout au long du projet, j'ai dû faire à répétitions des tests pour m'assurer que les mécaniques fonctionnent bien et qu'ils sont implémentés comme prévu."
+        "work": "QA Tester",
+        "desc": "Throughout the project, I had to repeatedly run tests to make sure that the mechanics worked well and were implemented as intended."
       },
       {
-        "work": "Game designer",
-        "desc": "Du début à la fin du projet j'ai assisté au design du jeu que ce soit pour les niveaux, les mécaniques ou l'environnement."
+        "work": "Game Designer",
+        "desc": "From start to finish, I was involved in the design of the game's levels, mechanics and environment."
       }
     ]
   }

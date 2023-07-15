@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>Détails</title>
+    <title>Details</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="/en/include.js"></script>
 
@@ -20,7 +20,7 @@
 
         function GetGameData() {
             $.ajax({
-                url: '/fr/data.json',
+                url: '/en/data.json',
                 dataType: 'json',
                 success: function (data) {
 
@@ -76,7 +76,7 @@
 
 
             if (game.contributions) {
-                main.append(`<h1 class="text-centered small-margin"> Mes contributions au projet</h1>`);
+                main.append(`<h1 class="text-centered small-margin"> My contributions</h1>`);
                 main.append(`<table class='contributions-grid centered text-centered'> </table>`);
 
                 var grid = $(".contributions-grid");
@@ -86,7 +86,7 @@
                 });
             }
 
-            main.append(`<div class='useful text-centered'><a class='download large-text white-border content-centered' href='${game.download}' target='_blank'>Jouer au jeu</a></div>`)
+            main.append(`<div class='useful text-centered'><a class='download large-text white-border content-centered' href='${game.download}' target='_blank'>Play the game</a></div>`)
 
 
             if (game.links) {
