@@ -43,5 +43,31 @@
         "desc": "Du début à la fin du projet j'ai assisté au design du jeu que ce soit pour les niveaux, les mécaniques ou l'environnement."
       }
     ]
+  },
+  {
+    "name": "Rest in Pastry",
+    "filename" : "rest-in-pastry",
+    "desc": "Rest in Pastry est un jeu réalisé en un peu moins de deux semaines pour 'My first game jam'. J'ai eu l'occasion de travailler avec un écrivain, deux artistes et un compositeur de sons tout en programmant le jeu complet par moi-même. Cela m'a donné l'occasion d'apprendre de nouvelles choses et de tester mes capacités.",
+    "img": "/images/rip-icon.jpg",
+    "status": "done",
+    "category" : "Game jam",
+    "download" : "https://queeb99.itch.io/rest-in-pastry",
+    "screenshot" : "/images/rip-screenshots/screenshot.png",
+    "screenshots" : 
+    [
+      "/images/rip-screenshots/Capture d’écran 2023-08-08 191842.png",
+      "/images/rip-screenshots/screenshot.png",
+      "/images/rip-screenshots/Capture d’écran 2023-08-08 192038.png",
+      "/images/rip-screenshots/Capture d’écran 2023-08-08 192137.png"
+    ]
+    ,
+    "year" : 2023,
+    "contributions": [
+      {
+        "work": "Programmeur",
+        "desc": "J'ai programmé tous les systèmes présents dans le jeu tel que les dialogues, le choix d'objets, servir les fantômes, le système de sauvegarde et plus encore..."
+      }
+
+    ]
   }
 ]
