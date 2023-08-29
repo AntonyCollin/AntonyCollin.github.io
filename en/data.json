@@ -1,7 +1,7 @@
 [ {
   "name": "Subnauticat",
   "filename" : "subnauticat",
-  "desc": "Dans ce jeu, tu joues en tant qu'un petit chat explorateur à bord d'un sous-marin qui doit se rendre le plus profond possible sous l'eau. Pour ce faire tu dois aspirer et vendre des trésors pour ensuite acheter des améliorations. Le jeu a été fait dans unity pour le Brackeys Game Jam, thème : Diving Deeper, en une semaine seulement. Je ne connaissais pas très bien les tilemaps de unity avant ce projet donc, j'ai dû faire de la recherche afin de les implémenter.",
+  "desc": "In this game, you play as a little explorer cat aboard a submarine that must go as deep as possible under water. To do this you have to suck up and sell treasures to then buy upgrades. The game was made in unity for the Brackeys Game Jam, theme: Diving Deeper, in just one week. I didn't know unity tilemaps very well before this project so I had to do some research in order to implement them.",
   "img": "/images/cover_image.jpg",
   "screenshot" : "/images/subnauticat-screenshots/preview.png",
   "status": "done",
@@ -19,11 +19,11 @@
   "contributions": [
     {
       "work": "Lead Programmeur",
-      "desc": "J'ai programmé la majorité des mécaniques du jeu tel que le système d'améliorations, le mouvement et le système de sauvegarde. Le système d'améliorations a été un défi pour moi parce que je n'avais jamais sauvegardé autant de données auparavant."
-    },
+
+      "desc": "I programmed most of the mechanics of the game such as the upgrade system, movement and the save system. The upgrade system was a challenge for me because I had never saved so much data before."    },
     {
       "work": "Level Designer",
-      "desc": "Dans le projet j'ai dû être level designer. J'ai dû utiliser le tilemap pour créer un environnement intéressant qui pousse le joueur à acheter les améliorations pour aller plus loin."
+      "desc": "In the project I had to be a level designer. I had to use the tilemap to create an interesting environment that pushes the player to buy the upgrades to go further."
     }
   ]
 },
