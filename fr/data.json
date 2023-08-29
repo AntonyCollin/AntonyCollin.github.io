@@ -6,8 +6,7 @@
   "screenshot" : "/images/chom-screenshot.png",
   "status": "done",
   "category" : "Game jam",
-  "video": "https://www.youtube.com/embed/JBuz7_cl5_8",
-  "download" : "https://queeb99.itch.io/chom",
+  "download" : "https://queeb99.itch.io/subnauticat",
   "screenshots" : 
   [
     "/images/chom-screenshots/Capture d’écran 2023-07-12 225211.png", 
@@ -20,13 +19,6 @@
   ]
   ,
   "year" : 2023,
-  "links" :
-  [
-    {
-      "text": "Game guide (french)",
-      "link": "https://docs.google.com/document/d/1V-X_ofIwo_crDE42tgn4gMiNliakSbjkeX7mHsRyLrY/edit?usp=sharing"
-    }
-  ],
   "contributions": [
     {
       "work": "Lead Programmeur",
