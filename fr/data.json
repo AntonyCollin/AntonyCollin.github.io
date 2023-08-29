@@ -1,4 +1,39 @@
-[
+[{
+  "name": "Subnauticat",
+  "filename" : "subnauticat",
+  "desc": "C.H.O.M. is a Parkour/Shooter video game in a sci-fi environment that was made in Unity with C# in the context of a student project, I made it in a team with 3 other students over a period of 3 months. Working in an agile way (SCRUM) and participating in almost every aspect of video game design, it allowed me to gain experience and work in an industry-like way. My team and I also worked in collaboration with a small team of artists, which gave us a good understanding of the collaborative aspect of game creation. C.H.O.M. was only the first iteration of my journey in video game creation, I'm very ambitious about my future in the business. As you'll see below, although my part in the project was focused on programming, I was also heavily involved in the game's design.",
+  "img": "/images/cover_image.jpg",
+  "screenshot" : "/images/chom-screenshot.png",
+  "status": "done",
+  "category" : "Game jam",
+  "video": "https://www.youtube.com/embed/JBuz7_cl5_8",
+  "download" : "https://queeb99.itch.io/chom",
+  "screenshots" : 
+  [
+    "/images/chom-screenshots/Capture d’écran 2023-07-12 225211.png", 
+    "/images/chom-screenshots/Capture d’écran 2023-07-12 225245.png" ,
+    "/images/chom-screenshots/Capture d’écran 2023-07-12 225327.png", 
+    "/images/chom-screenshots/Capture d’écran 2023-07-12 225358.png", 
+    "/images/chom-screenshots/Capture d’écran 2023-07-12 225632.png", 
+    "/images/chom-screenshots/Capture d’écran 2023-07-12 225930.png", 
+    "/images/chom-screenshots/Capture d’écran 2023-07-12 230018.png"
+  ]
+  ,
+  "year" : 2023,
+  "links" :
+  [
+    {
+      "text": "Game guide (french)",
+      "link": "https://docs.google.com/document/d/1V-X_ofIwo_crDE42tgn4gMiNliakSbjkeX7mHsRyLrY/edit?usp=sharing"
+    }
+  ],
+  "contributions": [
+    {
+      "work": "Lead Programmeur",
+      "desc": "Parkour mechanics, enemy and projectile system, programming of the majority of the game's settings, level selection system, weapon dispensers, inspection showcases in the lobby and more..."
+    }
+  ]
+},
   {
     "name": "Rest in Pastry",
     "filename" : "rest-in-pastry",
