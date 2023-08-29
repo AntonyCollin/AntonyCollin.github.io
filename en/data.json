@@ -1,29 +1,29 @@
 [ {
   "name": "Subnauticat",
   "filename" : "subnauticat",
-  "desc": "C.H.O.M. is a Parkour/Shooter video game in a sci-fi environment that was made in Unity with C# in the context of a student project, I made it in a team with 3 other students over a period of 3 months. Working in an agile way (SCRUM) and participating in almost every aspect of video game design, it allowed me to gain experience and work in an industry-like way. My team and I also worked in collaboration with a small team of artists, which gave us a good understanding of the collaborative aspect of game creation. C.H.O.M. was only the first iteration of my journey in video game creation, I'm very ambitious about my future in the business. As you'll see below, although my part in the project was focused on programming, I was also heavily involved in the game's design.",
+  "desc": "Dans ce jeu, tu joues en tant qu'un petit chat explorateur à bord d'un sous-marin qui doit se rendre le plus profond possible sous l'eau. Pour ce faire tu dois aspirer et vendre des trésors pour ensuite acheter des améliorations. Le jeu a été fait dans unity pour le Brackeys Game Jam, thème : Diving Deeper, en une semaine seulement. Je ne connaissais pas très bien les tilemaps de unity avant ce projet donc, j'ai dû faire de la recherche afin de les implémenter.",
   "img": "/images/cover_image.jpg",
-  "screenshot" : "/images/chom-screenshot.png",
+  "screenshot" : "/images/subnauticat-screenshots/preview.png",
   "status": "done",
   "category" : "Game jam",
-  "video": "https://www.youtube.com/embed/JBuz7_cl5_8",
-  "download" : "https://queeb99.itch.io/chom",
+  "download" : "https://queeb99.itch.io/subnauticat",
   "screenshots" : 
   [
-    "/images/chom-screenshots/Capture d’écran 2023-07-12 225211.png", 
-    "/images/chom-screenshots/Capture d’écran 2023-07-12 225245.png" ,
-    "/images/chom-screenshots/Capture d’écran 2023-07-12 225327.png", 
-    "/images/chom-screenshots/Capture d’écran 2023-07-12 225358.png", 
-    "/images/chom-screenshots/Capture d’écran 2023-07-12 225632.png", 
-    "/images/chom-screenshots/Capture d’écran 2023-07-12 225930.png", 
-    "/images/chom-screenshots/Capture d’écran 2023-07-12 230018.png"
+    "/images/subnauticat-screenshots/1.png",
+    "/images/subnauticat-screenshots/2.png",
+    "/images/subnauticat-screenshots/preview.png",
+    "/images/subnauticat-screenshots/4.png"
   ]
   ,
   "year" : 2023,
   "contributions": [
     {
-      "work": "Lead Programmer",
-      "desc": "Parkour mechanics, enemy and projectile system, programming of the majority of the game's settings, level selection system, weapon dispensers, inspection showcases in the lobby and more..."
+      "work": "Lead Programmeur",
+      "desc": "J'ai programmé la majorité des mécaniques du jeu tel que le système d'améliorations, le mouvement et le système de sauvegarde. Le système d'améliorations a été un défi pour moi parce que je n'avais jamais sauvegardé autant de données auparavant."
+    },
+    {
+      "work": "Level Designer",
+      "desc": "Dans le projet j'ai dû être level designer. J'ai dû utiliser le tilemap pour créer un environnement intéressant qui pousse le joueur à acheter les améliorations pour aller plus loin."
     }
   ]
 },
