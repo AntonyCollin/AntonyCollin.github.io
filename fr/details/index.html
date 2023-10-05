@@ -38,9 +38,8 @@
         }
         function SetData(game) {
             var main = $("main");
-
             main.append(`<h1 class='small-margin text-centered'>${game.name} (${game.year})</h1>`);
-
+            main.append(`<p class='text-centered'> durée du projet : ${game.length}</p>`);
             main.append(`<div class='small-margin cont flex content-centered'> </div>`);
             var cont = $(".cont");
 
