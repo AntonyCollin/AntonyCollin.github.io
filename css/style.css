@@ -568,6 +568,17 @@ a:active {
  } 
 
  @media (max-width: 500px) {
+
+  #old-name {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+
+  #new-name {
+    visibility: visible;
+  }
+
   .gameDesc {
     font-size: 1.2rem;
   }
