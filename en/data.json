@@ -16,6 +16,7 @@
   ]
   ,
   "year" : 2023,
+  "length" : "1 week",
   "contributions": [
     {
       "work": "Lead Programmeur",
@@ -33,6 +34,7 @@
     "desc": "Rest in Pastry is a game I made for 'My first game jam' in a bit less than two weeks. While working with a writer, two artists and a sound composer, I programmed the whole game. This gave me the opportunity to learn new things and to test my capacities.",
     "img": "/images/rip-icon.jpg",
     "status": "done",
+    "length" : "2 weeks",
     "category" : "Game jam",
     "download" : "https://queeb99.itch.io/rest-in-pastry",
     "screenshot" : "/images/rip-screenshots/screenshot.png",
@@ -60,6 +62,7 @@
     "img": "/images/chom.jpg",
     "screenshot" : "/images/chom-screenshot.png",
     "status": "done",
+    "length" : "3 months",
     "category" : "School",
     "video": "https://www.youtube.com/embed/JBuz7_cl5_8",
     "download" : "https://queeb99.itch.io/chom",
