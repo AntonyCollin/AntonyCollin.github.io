@@ -570,13 +570,13 @@ a:active {
  @media (max-width: 500px) {
 
   #old-name {
-    visibility: hidden;
+    display: none;
     height: 0;
     width: 0;
   }
 
   #new-name {
-    visibility: visible;
+    display: block!important;
   }
 
   .gameDesc {
