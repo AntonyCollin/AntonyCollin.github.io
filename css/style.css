@@ -569,7 +569,7 @@ a:active {
 
  @media (max-width: 500px) {
   .gameDesc {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
 
   .w3-container {
