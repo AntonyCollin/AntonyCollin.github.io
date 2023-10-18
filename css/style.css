@@ -158,6 +158,10 @@ nav {
   
 }
 
+.game-img:hover{
+  box-shadow: 10px 5px 5px var(--mainPurple);
+}
+
 .category{
   position: absolute;
   z-index: 1;
@@ -459,8 +463,10 @@ a:active {
 /* #region media queries */
 
 /* large screens */
-@media (max-width: 1200px) {
-
+@media (min-width: 1200px) {
+  .game-img{
+    width: 25rem;
+  }
 }
 
 /* laptops */
