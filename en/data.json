@@ -17,6 +17,8 @@
   ,
   "year" : 2023,
   "length" : "1 week",
+  "tags" : [{"tag" : "exploration"}, {"tag" : "adventure"}],
+
   "contributions": [
     {
       "work": "Lead Programmeur",
@@ -36,6 +38,8 @@
     "status": "done",
     "length" : "2 weeks",
     "category" : "Game jam",
+    "tags" : [{"tag" : "simulation"}, {"tag" : "pixel art"}],
+
     "download" : "https://queeb99.itch.io/rest-in-pastry",
     "screenshot" : "/images/rip-screenshots/screenshot.png",
     "screenshots" : 
@@ -78,6 +82,7 @@
     ]
     ,
     "year" : 2022,
+    "tags" : [{"tag" : "shooter"}, {"tag" : "parkour"}],
     "links" :
     [
       {

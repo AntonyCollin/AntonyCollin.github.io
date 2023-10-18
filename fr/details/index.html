@@ -50,6 +50,9 @@
             }
             main.append(`<p class='gameDesc text-justified'>${game.desc}</p>`)
 
+            main.append(`<div class='useful text-centered'><a class='download large-text white-border content-centered' href='${game.download}' target='_blank'>Jouer au jeu</a></div>`)
+
+
             if (game.screenshots) {
                 main.append(`<div class='w3-content w3-display-container centered half-width'> </div>`);
                 var slideshow = $(".w3-display-container");
@@ -85,7 +88,6 @@
                 });
             }
 
-            main.append(`<div class='useful text-centered'><a class='download large-text white-border content-centered' href='${game.download}' target='_blank'>Jouer au jeu</a></div>`)
 
 
             if (game.links) {

@@ -17,6 +17,10 @@
   ,
   "year" : 2023,
   "length" : "1 semaine",
+  "engine" : "Unity",
+  "language" : "C#",
+  "platforms" : [{"platform" : "Naviguateur"}, {"platform" : "Windows"}],
+  "tags" : [{"tag" : "exploration"}, {"tag" : "aventure"}],
   "contributions": [
     {
       "work": "Lead Programmeur",
@@ -35,6 +39,7 @@
     "img": "/images/rip-icon.jpg",
     "status": "done",
     "length" : "2 semaines",
+    "tags" : [{"tag" : "simulation"}, {"tag" : "pixel art"}],
     "category" : "Game jam",
     "download" : "https://queeb99.itch.io/rest-in-pastry",
     "screenshot" : "/images/rip-screenshots/screenshot.png",
@@ -66,6 +71,7 @@
     "category" : "École",
     "video": "https://www.youtube.com/embed/JBuz7_cl5_8",
     "download" : "https://queeb99.itch.io/chom",
+    "tags" : [{"tag" : "shooter"}, {"tag" : "parcours"}],
     "screenshots" : 
     [
       "/images/chom-screenshots/Capture d’écran 2023-07-12 225211.png", 

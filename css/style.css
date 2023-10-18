@@ -191,6 +191,8 @@ iframe {
 .gameDesc {
   font-size: 1.2rem;
   padding: 1rem;
+  width: 50%;
+  margin: auto;
 }
 
 .game-links{

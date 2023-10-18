@@ -45,11 +45,16 @@ switch (item.category)
 
                             $(".games").append(`<span class='game text-centered medium-text'><h3>${item.name} (${item.year})</h3> <a class='game-card' href='./details/?game=${item.name}'><img class='game-img white-border' src='${item.img}'><div class='category' style="background-color : ${color}">${item.category}</div> </a> <div class='cards-container flex'> </div></span>`)
                             
-                            $.each(item.contributions, function (index,item) {
+                            // $.each(item.contributions, function (index,item) {
 
-                                var lastGame = $(`.games .game:last-child`);
-                                lastGame.children(':last-child').append(`<em class='card'> ${item.work}</em>`);
-                            });
+                            //     var lastGame = $(`.games .game:last-child`);
+                            //     lastGame.children(':last-child').append(`<em class='card'> ${item.work}</em>`);
+                            // });
+                            $.each(item.tags, function (index,item) {
+
+var lastGame = $(`.games .game:last-child`);
+lastGame.children(':last-child').append(`<em class='card'> ${item.tag}</em>`);
+});
                         }); 
                     },
                     
