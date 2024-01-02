@@ -383,6 +383,10 @@ footer {
 
 }
 
+.block {
+  display: block;
+}
+
 /* #endregion */
 
 
@@ -406,6 +410,7 @@ footer {
   padding-top: 5%;
   
 }
+
 .resume {
   width: 60%;
   /* height: 700px; */
