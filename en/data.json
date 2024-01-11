@@ -37,6 +37,7 @@
     "img": "/images/rip-icon.jpg",
     "status": "done",
     "length" : "2 weeks",
+    "code" : "https://github.com/AntonyCollin/Rest-In-Pastry",
     "category" : "Game jam",
     "tags" : [{"tag" : "simulation"}, {"tag" : "pixel art"}],
 
@@ -57,6 +58,13 @@
         "desc": "I've programmed every system in the game such as the dialogues, choosing the cooking options, serving the ghosts, the saving system and more.."
       }
 
+    ],
+    "links" :
+    [
+      {
+        "text": "See the code",
+        "link": "https://github.com/AntonyCollin/Rest-In-Pastry"
+      }
     ]
   },
   {

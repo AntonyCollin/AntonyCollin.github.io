@@ -38,6 +38,7 @@
     "desc": "Rest in Pastry est un jeu réalisé en un peu moins de deux semaines pour 'My first game jam'. J'ai eu l'occasion de travailler avec un écrivain, deux artistes et un compositeur de sons tout en programmant le jeu complet par moi-même. Cela m'a donné l'occasion d'apprendre de nouvelles choses et de tester mes capacités.",
     "img": "/images/rip-icon.jpg",
     "status": "done",
+    "code" : "https://github.com/AntonyCollin/Rest-In-Pastry",
     "length" : "2 semaines",
     "tags" : [{"tag" : "simulation"}, {"tag" : "pixel art"}],
     "category" : "Game jam",
@@ -58,6 +59,13 @@
         "desc": "J'ai programmé tous les systèmes présents dans le jeu tel que les dialogues, le choix d'objets, servir les fantômes, le système de sauvegarde et plus encore..."
       }
 
+    ],
+    "links" :
+    [
+      {
+        "text": "Voir le code",
+        "link": "https://github.com/AntonyCollin/Rest-In-Pastry"
+      }
     ]
   },
   {
