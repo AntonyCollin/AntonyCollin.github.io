@@ -1,4 +1,13 @@
-[{
+[  
+  {
+  "name": "Artifice Studio | LOTRT",
+  "img": "/images/LOTRT.png",
+  "year" : 2026,
+  "category" : "Professionnel",
+  "customDetails" : "https://www.roundtablegame.com/",
+  "tags" : [{"tag" : "point and click"}, {"tag" : "rpg"}]
+},
+{
   "name": "Subnauticat",
   "filename" : "subnauticat",
   "desc": "Dans ce jeu, tu joues en tant qu'un petit chat explorateur à bord d'un sous-marin qui doit se rendre le plus profond possible sous l'eau. Pour ce faire tu dois aspirer et vendre des trésors pour ensuite acheter des améliorations. Le jeu a été fait dans unity pour le Brackeys Game Jam, thème : Diving Deeper, en une semaine seulement. Je ne connaissais pas très bien les tilemaps de unity avant ce projet donc, j'ai dû faire de la recherche afin de les implémenter.",
