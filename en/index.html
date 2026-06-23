@@ -48,9 +48,24 @@ switch (item.category)
 }
 
 const detailsLink = item.customDetails ? item.customDetails : `./details/?game=${item.name}`;
+const studioContent = item.studio ? `<div class='studio' style="background-color : ${color}"> ${item.studio}</div>` : "";
 
-                            $(".games").append(`<span class='game text-centered medium-text'><h3>${item.name} (${item.year})</h3> <a class='game-card' href='${detailsLink}'><img class='game-img white-border' src='${item.img}'><div class='category' style="background-color : ${color}">${item.category}</div> </a> <div class='cards-container flex'> </div></span>`)
-                            
+                            $(".games").append(
+                                `<span class='game text-centered medium-text'>
+                                <h3>
+                                    ${item.name} (${item.year})
+                                    </h3> 
+                                    <a class='game-card' href='${detailsLink}'>
+                                        <img class='game-img white-border' src='${item.img}'>
+                                        ${studioContent}
+                                            <div class='category' style="background-color : ${color}">
+                                                ${item.category}
+                                                </div> 
+                                                </a> 
+                                                <div class='cards-container flex'> 
+                                                    </div>
+                                                    </span>`);
+                                                    
                             // $.each(item.contributions, function (index,item) {
 
                             //     var lastGame = $(`.games .game:last-child`);

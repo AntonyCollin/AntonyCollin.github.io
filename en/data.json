@@ -1,9 +1,10 @@
 [ 
   {
-  "name": "Artifice Studio | LOTRT",
+  "name": "LOTRT",
   "img": "/images/LOTRT.png",
   "year" : 2026,
   "category" : "Professional",
+  "studio" : "Artifice Studio",
   "customDetails" : "https://www.roundtablegame.com/",
   "tags" : [{"tag" : "point and click"}, {"tag" : "rpg"}]
 },
